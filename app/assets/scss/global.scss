@@ -1,0 +1,59 @@
+/* BEGIN: styles.scss
+// -----------------------------------------------------*/
+
+// Global Includes
+// -----------------------------------------------------
+@import '_var';
+
+html,
+body {
+	@include BodyCopy;
+    background: #f9f9f9;
+}
+a {
+    color: $linkColor;
+}
+
+
+
+.box-color {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px 10px 0;
+    // black
+    &.black {
+        background: $black;
+    }
+    &.black-light {
+        background: $blackLight;
+    }
+    &.black-lighter {
+        background: $blackLighter;
+    }
+    &.black-lightest {
+        background: $blackLightest;
+    }
+    // grey
+    &.grey-lightest {
+        background: $greyLightest;
+    }
+    &.grey-lighter {
+        background: $greyLighter;
+    }
+    &.grey-light {
+        background: $greyLight;
+    }
+    &.grey {
+        background: $grey;
+    }
+    &.grey-dark {
+        background: $greyDark;
+    }
+    &.grey-darker {
+        background: $greyDarker;
+    }
+    &.grey-darkest {
+        background: $greyDarkest;
+    }
+}
