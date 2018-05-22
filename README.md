@@ -2,7 +2,8 @@ Grunt PHP Starter Project
 
 # grunt-php-starter
 
-## npm install
-## bower install
+## Install
+npm install && bower install
 
-### grunt
+## Project
+Starter package for any grunt-php based projects.
