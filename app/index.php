@@ -49,6 +49,12 @@
                 <div class="box-color grey-lighter"></div>
                 <div class="box-color grey-lightest"></div>
             </section>
+            <section>
+                <h2>Exploration</h2>
+                <p>
+                    <a href="css-variables.php">CSS Variables</a>
+                </p>
+            </section>
         </article> 
         <?php include("inc/foot.inc.php"); ?>   
     </main> 

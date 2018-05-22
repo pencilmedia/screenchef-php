@@ -14,6 +14,9 @@ module.exports = function(grunt) {
 			},
             php: {
                 files: ['app/**/*.php']
+            },
+            options: {
+                spawn: false // scss will compile after browser reload without this
             }
         },
 		sass: {
@@ -22,7 +25,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'app/assets/styles/global.css': 'app/assets/scss/global.scss'
+					'app/assets/css/global.css': 'app/assets/scss/global.scss'
 				},
 				livereload: true
 			}
