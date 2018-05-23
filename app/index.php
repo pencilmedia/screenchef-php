@@ -55,10 +55,6 @@
                     <a href="css-variables.php">CSS Variables</a>
                 </p>
             </section>
-            <section>
-                <h2>CSS Grid</h2>
-                
-            </section>
         </article> 
         <?php include("inc/foot.inc.php"); ?>   
     </main> 
