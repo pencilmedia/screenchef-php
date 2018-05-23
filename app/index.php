@@ -21,7 +21,7 @@
     <?php //include("inc/nav.inc.php"); ?>
         <article>
             <section>
-                <h1>Grunt-PHP Project</h1>
+                <h1>Screenchef</h1>
                 <p>This project utilizes: 
                     <ul>
                         <li>grunt-php</li>
@@ -54,6 +54,10 @@
                 <p>
                     <a href="css-variables.php">CSS Variables</a>
                 </p>
+            </section>
+            <section>
+                <h2>CSS Grid</h2>
+                
             </section>
         </article> 
         <?php include("inc/foot.inc.php"); ?>   
