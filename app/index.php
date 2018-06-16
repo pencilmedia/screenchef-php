@@ -25,6 +25,7 @@ require('../vendor/autoload.php'); // For heroku php hosting
         <article>
             <section>
                 <h1>Heroku Hosted Screenchef Grunt-PHP</h1>
+                <p>This project use Grunt for dev and Heroku php for hosting.</p>
                 <p>This project utilizes: 
                     <ul>
                         <li>grunt-php</li>
@@ -32,6 +33,9 @@ require('../vendor/autoload.php'); // For heroku php hosting
                         <li>grunt-sass</li>
                         <li>grunt-contrib-watch</li>
                     </ul>
+                </p>
+                <p>
+                    <img src="assets/img/example.jpg" alt="test image">
                 </p>
                 <a href="#/">Link Example</a>
                 <i class="fas fa-american-sign-language-interpreting"></i>
