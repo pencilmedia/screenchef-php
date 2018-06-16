@@ -19,6 +19,10 @@ We use two buildpacks to enable us to compile frontend assets with Grunt
 
 Run git push heroku master to create a new release using these buildpacks.
 
+### Notes
+Deploying PHP apps on heroku: https://devcenter.heroku.com/articles/deploying-php
+
+
 # Dev Notes
 Based on grunt-php for local php server
 
