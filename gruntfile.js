@@ -54,7 +54,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 options: {
-                    hostname: 'screenchef-php.herokuapp.com',
+                    hostname: '0.0.0.0',
                     base: 'app'
                 }
             }
