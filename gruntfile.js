@@ -51,15 +51,8 @@ module.exports = function(grunt) {
                     port: 8010,
                     base: 'app'
                 }
-            },
-            dist: {
-                options: {
-                    hostname: '0.0.0.0',
-                    base: 'app'
-                }
             }
         }
 	});
     grunt.registerTask('default', ['php', 'sass', 'browserSync', 'watch']);
-    grunt.registerTask('heroku', ['php:dist']);
 };
