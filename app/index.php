@@ -1,6 +1,6 @@
 <?php
 
-require('vendor/autoload.php');
+require('../vendor/autoload.php');
 
 // SETTING THE ROOT VARIABLE WE CAN USE IT TO CREATE RELATIVE PATHS
     include("config.inc");
