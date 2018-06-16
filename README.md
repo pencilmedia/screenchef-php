@@ -1,6 +1,6 @@
-Screenchef-php
+#Screenchef-php
 
-# Dist Notes
+## Dist Notes
 Heroku host does not need to run grunt commands. "app" root has all css, php, js files
 
 ## Setup Heroku

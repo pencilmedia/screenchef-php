@@ -1,6 +1,6 @@
 <?php
 
-require('../vendor/autoload.php');
+require('../vendor/autoload.php'); // For heroku php hosting
 
 // SETTING THE ROOT VARIABLE WE CAN USE IT TO CREATE RELATIVE PATHS
     include("config.inc");
@@ -24,7 +24,7 @@ require('../vendor/autoload.php');
     <?php //include("inc/nav.inc.php"); ?>
         <article>
             <section>
-                <h1>Screenchef Grunt-PHP</h1>
+                <h1>Heroku Hosted Screenchef Grunt-PHP</h1>
                 <p>This project utilizes: 
                     <ul>
                         <li>grunt-php</li>
