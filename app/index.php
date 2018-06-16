@@ -1,4 +1,7 @@
 <?php
+
+require('vendor/autoload.php');
+
 // SETTING THE ROOT VARIABLE WE CAN USE IT TO CREATE RELATIVE PATHS
     include("config.inc");
     $ROOT = '/'; // Set root for relative paths
@@ -21,7 +24,7 @@
     <?php //include("inc/nav.inc.php"); ?>
         <article>
             <section>
-                <h1>Screenchef</h1>
+                <h1>Screenchef Grunt-PHP</h1>
                 <p>This project utilizes: 
                     <ul>
                         <li>grunt-php</li>
