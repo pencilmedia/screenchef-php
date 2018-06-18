@@ -33,44 +33,101 @@ a {
     color: $linkColor;
 }
 
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 .box-color {
-    display: inline-block;
-    width: 50px;
+    width: 125px;
     height: 50px;
-    margin: 0 5px 10px 0;
+    margin: 0 5px 5px 0;
+    text-align: center;
     // black
     &.black {
+        color: lighten($black, 60%);
         background: $black;
     }
     &.black-light {
+        color: lighten($black, 60%);
         background: $blackLight;
     }
     &.black-lighter {
+        color: lighten($black, 20%);
         background: $blackLighter;
     }
     &.black-lightest {
+        color: lighten($black, 20%);
         background: $blackLightest;
+    }
+    &.charcoal {
+        color: lighten($white, 20%);
+        background: $charcoal;
     }
     // grey
     &.grey-lightest {
+        color: darken($white, 80%);
         background: $greyLightest;
     }
     &.grey-lighter {
+        color: darken($white, 80%);
         background: $greyLighter;
     }
     &.grey-light {
+        color: darken($white, 80%);
         background: $greyLight;
     }
     &.grey {
+        color: darken($white, 80%);
         background: $grey;
     }
     &.grey-dark {
+        color: lighten($white, 20%);
         background: $greyDark;
     }
     &.grey-darker {
+        color: lighten($white, 20%);
         background: $greyDarker;
     }
     &.grey-darkest {
+        color: lighten($white, 20%);
         background: $greyDarkest;
+    }
+    // colors
+    &.blue {
+        color: lighten($white, 20%);
+        background: $blue;
+    }
+    &.red {
+        color: lighten($white, 20%);
+        background: $red;
+    }
+    &.brown {
+        color: lighten($white, 20%);
+        background: $brown;
+    }
+    &.yellow {
+        color: lighten($white, 20%);
+        background: $yellow;
+    }
+    &.schoolbusYellow {
+        color: darken($white, 80%);
+        background: $schoolbusYellow;
+    }
+    &.orange {
+        color: lighten($white, 20%);
+        background: $orange;
+    }
+    &.darkOrange {
+        color: lighten($white, 20%);
+        background: $darkOrange;
+    }
+    &.pink {
+        color: lighten($white, 20%);
+        background: $pink;
+    }
+    &.purple {
+        color: lighten($white, 20%);
+        background: $purple;
     }
 }

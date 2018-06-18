@@ -19,7 +19,11 @@
     <![endif]-->
     <main>
         <?php include("$ROOT/inc/nav.inc.php"); ?>
+        
+        <h2>Components</h2>
+        <p>This project use Grunt for dev and Heroku php for hosting.</p>
         <?php include("tabs.inc.php"); ?>
+
         <?php include("$ROOT/inc/foot.inc.php"); ?>   
     </main> 
 </body>

@@ -1,4 +1,5 @@
 #Screenchef-php
+This project use Grunt for dev and Heroku php for hosting.
 
 ## Dist Notes
 Heroku host does not need to run grunt commands. "app" root has all css, php, js files

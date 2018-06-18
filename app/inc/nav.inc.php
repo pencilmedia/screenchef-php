@@ -1,12 +1,11 @@
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
-
 <header class="chef-grid--header page-header animated zoomInUp">
     <hgroup>
         <h1><a href="<?php echo $ROOT ?>">Ralph Adrian Garcia</a></h1>
         <h2>Interaction Designer and Prototyper</h2>
-        <p><?php echo (string)$yearsExperience->y; ?> years in user experience and interaction design.</p>
+        <p><?php echo (string)$yearsExperience->y; ?> years in UX Design and Web Development.</p>
     </hgroup>
     <nav class="main-nav">
        <ul>

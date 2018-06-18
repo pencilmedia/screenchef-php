@@ -24,37 +24,39 @@ require('../vendor/autoload.php'); // For heroku php hosting
     <?php include("inc/nav.inc.php"); ?>
         <article>
             <section>
-                <h1>Heroku Hosted Screenchef Grunt-PHP</h1>
-                <p>This project use Grunt for dev and Heroku php for hosting.</p>
-                <p>This project utilizes: 
-                    <ul>
-                        <li>grunt-php</li>
-                        <li>BrowserSync</li>
-                        <li>grunt-sass</li>
-                        <li>grunt-contrib-watch</li>
-                    </ul>
-                </p>
                 <p>
                     <img src="assets/img/example.jpg" alt="test image">
                 </p>
                 <a href="#/">Link Example</a>
-                <i class="fas fa-american-sign-language-interpreting"></i>
+                <i class="fas fa-star"></i>
             </section>
             <section>
                 <h3>Color Palette</h3>
-                <h6>Black</h6>
-                <div class="box-color black"></div>
-                <div class="box-color black-light"></div>
-                <div class="box-color black-lighter"></div>
-                <div class="box-color black-lightest"></div>
-                <h6>Grey</h6>
-                <div class="box-color grey-darkest"></div>
-                <div class="box-color grey-darker"></div>
-                <div class="box-color grey-dark"></div>
-                <div class="box-color grey"></div>
-                <div class="box-color grey-light"></div>
-                <div class="box-color grey-lighter"></div>
-                <div class="box-color grey-lightest"></div>
+                <div class="color-palette">
+                    <div class="box-color black">black</div>
+                    <div class="box-color black-light">blackLight</div>
+                    <div class="box-color black-lighter">blackLighter</div>
+                    <div class="box-color black-lightest">blackLightest</div>
+                    <div class="box-color charcoal">charcoal</div>
+
+                    <div class="box-color grey-darkest">greyDarkest</div>
+                    <div class="box-color grey-darker">greyDarker</div>
+                    <div class="box-color grey-dark">greyDark</div>
+                    <div class="box-color grey">grey</div>
+                    <div class="box-color grey-light">greyLight</div>
+                    <div class="box-color grey-lighter">greyLighter</div>
+                    <div class="box-color grey-lightest">greyLightest</div>
+                    
+                    <div class="box-color blue">blue</div>
+                    <div class="box-color red">red</div>
+                    <div class="box-color brown">brown</div>
+                    <div class="box-color yellow">yellow</div>
+                    <div class="box-color schoolbusYellow">schoolbusYellow</div>
+                    <div class="box-color orange">orange</div>
+                    <div class="box-color darkOrange">darkOrange</div>
+                    <div class="box-color pink">pink</div>
+                    <div class="box-color purple">purple</div>
+                </div>
             </section>
             <section>
                 <h2>Exploration</h2>
@@ -88,6 +90,32 @@ require('../vendor/autoload.php'); // For heroku php hosting
             <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
           </div>
         </div>
+
+
+        <article class="chef-grid--content">
+            <section>
+                <h2>Playground</h2>
+                <p>
+                    <a href="playground/css-variables.php">CSS Variables</a>
+                </p>
+                <p>
+                    <a href="playground/css-grid.php">CSS Grid</a>
+                </p>
+                <h5>Strikethrough</h5>
+                <p>
+                    <span style="text-decoration: line-through">strike this out</span>
+                </p>
+                <p>line through whitespace
+                    <span style="text-decoration: line-through">&nbsp;&nbsp;&nbsp;</span>
+                </p>
+                <p>
+                <span style='color:red;text-decoration:line-through'>
+                    <span style='color:black'>black with red strikethrough</span>
+                </span>
+                </p>
+            </section>
+        </article>
+        <!-- BEGIN: Footer -->
         <?php include("inc/foot.inc.php"); ?>   
     </main> 
 </body>
