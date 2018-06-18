@@ -24,13 +24,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 
 <!-- CSS: Animate.css -->
-<?php //echo '<link rel="stylesheet" href="' . $ROOT . 'bower_components/animate.css/animate.min.css">'; ?>
-<!-- <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css" crossorigin="anonymous">
 
 <!-- Web Fonts -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<?php // echo '<link rel="stylesheet" href="' . $ROOT . 'assets/fonts/webfonts.css">'; ?>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<?php echo '<link rel="stylesheet" href="' . $ROOT . 'assets/fonts/webfonts.css">'; ?>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata">
 
 <!-- CSS: Custom -->

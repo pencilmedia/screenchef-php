@@ -10,7 +10,10 @@
 <!-- Skeleton-tabs JS -->
 <?php // echo '<script type="application/javascript" src="' . $ROOT . 'bower_components/skeleton-tabs/skeleton-tabs.js"></script>'; ?>
 
-<!-- Custom JS -->
+<!-- Global -->
 <?php echo '<script type="application/javascript" src="' . $ROOT . 'assets/js/global.js"></script>'; ?>
+
+<!-- Tabs -->
+<?php echo '<script type="application/javascript" src="' . $ROOT . 'assets/js/tabs.js"></script>'; ?>
 
 

@@ -3,12 +3,31 @@
 
 // Global Includes
 // -----------------------------------------------------
-@import '_var';
+@import 'var';
+@import 'mixins';
+@import 'common';
+@import 'animation';
+@import 'typography';
+@import 'grid';
+@import 'layout';
+@import 'nav';
+@import 'footer';
+@import '_tabs';
+
 
 html,
 body {
 	@include BodyCopy;
-    background: $greyLightest;
+    background-color: $bodyBackground;
+    border-top: 2px solid $schoolbusYellow;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+}
+main {
+    margin: 0 5%;
 }
 a {
     color: $linkColor;
@@ -55,6 +74,3 @@ a {
         background: $greyDarkest;
     }
 }
-
-
-

@@ -1,0 +1,53 @@
+/* BEGIN: _layout.scss
+// -----------------------------------------------------*/
+
+.chef-grid {
+    display: grid;
+    grid-template-rows: auto 4fr 45px;
+    min-height: 100vh;
+    .chef-grid--header {
+        // outline: 1px solid blue;
+        hgroup {
+            grid-area: a;
+            align-self: end;
+        }
+        nav {
+            grid-area: b;
+            align-self: end;
+            justify-self: end;
+        }
+        display: grid;
+        grid-template-areas: "a b";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .chef-grid--content {
+        // outline: 1px solid blue;
+    }
+    .chef-grid--footer {
+        // outline: 1px solid blue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+     .chef-grid {
+         .chef-grid--header {
+            grid-template-areas: "a" "b";
+            grid-template-columns: 100%;
+            grid-template-rows: 2fr 1fr;
+            hgroup {
+                margin: 0 20px;
+            }
+            nav {
+                margin: 0 20px;
+                justify-self: center;
+                width: 100%;
+                ul {border: 1px solid green;
+                    margin: 0 20px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}

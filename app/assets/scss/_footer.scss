@@ -1,0 +1,26 @@
+/* BEGIN: footer.scss
+// -----------------------------------------------------*/
+main {
+    > footer {
+        background: $bodyBackground;
+        ul {
+            text-align: center;
+            margin: 0;
+            li {
+                color: $greyDark;
+                font-size: 85%;
+                list-style: none;
+                line-height: 45px;
+                width: 100%;
+                a {
+                    margin:0;
+                    color: $greyDark;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

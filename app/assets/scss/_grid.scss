@@ -1,0 +1,105 @@
+/* BEGIN: _grid.scss
+// -----------------------------------------------------*/
+
+// Variables
+@supports(--css: variables) {
+     :root {
+          --col: 1fr;
+          --gutter: 10px;
+     }
+}
+
+// Grid
+.css-grid {
+     outline: 1px solid red;
+     margin-bottom: 40px;
+     background: $white;
+     * {
+          outline: 1px solid red;
+     }
+     display: grid;
+     grid-template-columns: 1fr repeat(12, var(--col)) 1fr;
+     grid-template-rows: minmax(100%, 100%);
+     grid-gap: var(--gutter); // padding: var(--gutter);
+     width: 100%;
+     min-height: 300px;
+     &.css-grid--col-1 {
+        grid-template-columns: 100%;
+     }
+     &.css-grid--col-2 {
+        grid-template-columns:  var(--col) var(--col);
+     }
+     &.css-grid--col-3 {
+          grid-template-columns: var(--col) var(--col) var(--col);
+     }
+     .css-grid--col {
+          // grid-column: 1 / 3;
+     }
+}
+
+.grid {}
+
+.grid__item {
+     border: 1px solid blue;
+}
+
+.grid__item--heading {
+     grid-column: 2 / 11;
+}
+
+.grid__item--body {
+     grid-column: 2 / 8;
+     grid-row: 2 / span 1;
+}
+
+.grid__item--media {
+     background: hotPink;
+     grid-column: 11 / 14;
+     grid-row: 1 / span 2;
+}
+
+
+// Holy Grail Grid
+.hg__header {
+     grid-area: hg_header;
+     background: #666;
+}
+
+.hg__footer {
+     grid-area: hg_footer;
+     background: #999;
+}
+
+.hg__main {
+     grid-area: main;
+     background: #ccc;
+}
+
+.hg__left {
+     grid-area: hg_navigation;
+     background: #ddd;
+}
+
+.hg__right {
+     grid-area: ads;
+     background: #eee;
+}
+
+.hg {outline: 1px solid black;
+    [class^="hg_"] { // match starts with "hg_"
+        
+    }
+     display: grid;
+     grid-template-areas: "hg_header hg_header hg_header" "hg_navigation main ads" "hg_footer hg_footer hg_footer";
+     grid-template-columns: 150px 1fr 150px;
+     grid-template-rows: 100px 1fr 30px;
+     min-height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+     .hg {
+          grid-template-areas: "hg_header" "hg_navigation" "main" "ads" "hg_footer";
+          grid-template-columns: 100%;
+          grid-template-rows: 100px 50px 1fr 50px 30px;
+     }
+}

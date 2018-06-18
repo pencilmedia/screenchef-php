@@ -1,0 +1,78 @@
+/* BEGIN: common.scss
+// -----------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+/* Highlight Text Color */
+::selection {
+    background: $orange;    /* Safari */
+    color: #fff;
+}
+::-moz-selection {
+    background: $orange;    /* Firefox */
+    color: #fff;
+}
+
+/* Global ************* */
+html, body {
+    height: 100%;
+}
+body {
+    background-color: $bodyBackground;
+    border-top: 2px solid $schoolbusYellow;
+    margin: 0;
+    padding: 0;
+}
+p {
+    line-height: 1.5em;
+    margin: 0 0 1.25em 0;
+}
+a {
+    color: $blueDarkest;
+    text-decoration: none;
+    border-bottom: 1px dashed $borderColor;
+    &:hover {
+         color: $purple;
+         border-bottom-style: solid;
+    }
+}
+dl {
+    > dd {
+         margin-left: 0;
+    }
+}
+
+/* Helpers ************* */
+.pull-right {
+    float: right;
+}
+.back_top {
+   margin: 0;
+   padding: $pageMargin $pageMargin $pageMargin 0;
+   border-bottom: 1px dashed $schoolbusYellow;
+   // border-top: 1px dashed $schoolbusYellow;
+}
+.align-right {
+   text-align: right;
+   .button {
+       margin-bottom: 0;
+   }
+}
+
+.callout {
+   padding: $pageMargin $pageMargin + 20px;
+   border: 1px dashed $borderColor;
+   background: $greyLightest;
+   > h4 {
+       margin-bottom: $pageMargin - 10px;
+   }
+   .icon-award {
+      //  color: lighten($schoolbusYellow, 25%);
+      color: $greyLight;
+   }
+   .callout-awards {
+       border: 1px dashed $schoolbusYellow;
+       background: lighten($schoolbusYellow, 50%);
+   }
+}
