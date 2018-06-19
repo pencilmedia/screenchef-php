@@ -28,7 +28,11 @@ Deploying PHP apps on heroku: https://devcenter.heroku.com/articles/deploying-ph
 Based on grunt-php for local php server
 
 ## Install
-npm install
+
+1. Install Composer (for PHP)
+     - php composer-setup.php (Reference: https://getcomposer.org/download/)
+     - php composer.phar install (Installs dependencies 'vendor' folder)
+2. npm install
 
 ## Run
 grunt
