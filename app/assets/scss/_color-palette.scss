@@ -10,31 +10,23 @@
 $black: 				#000;
 $charcoal: 			#333;
 $white: 				#fff;
-$blue: 				#0080FF;
-$red: 				#900;
-$brown:				#432;
-$yellow:                #EFB73E;
-$orange:                #f96;
-$schoolbusYellow:	    #FEC200;
-$darkOrange:            darken(#f96, 40%);
-$pink:                  #c3325f;
-$purple:                #986FB1;
+$blue: 				#05f;
+$red: 				#d22;
+$brown:				#382424;
+$orange:                 #f50;
+$yellow:	               #FEC200;
+$pink:                   #f69;
+$purple:                 #94c;
+$green:                  #409e3c;
 
 // Grey
 $grey: #ccc;
 $greyLight: 			lighten($grey, 5%);
 $greyLighter: 			lighten($grey, 10%);
-$greyLightest: 		lighten($grey, 15%);
+$greyLightest: 		lighten($grey, 14%);
 $greyDark: 			darken($grey, 15%);
 $greyDarker:			darken($grey, 30%);
 $greyDarkest:			darken($grey, 45%);
-
-// Black
-$blackBase:      		#000;
-$blackLightest:  		lighten($blackBase, 90%);
-$blackLighter:   		lighten($blackBase, 60%);
-$blackLight:     		lighten($blackBase, 30%);
-$black:          		$blackBase;
 
 // Blues
 $blue:                  #043F90;
@@ -46,10 +38,10 @@ $blueDarker:            darken($blue, 4%);
 $blueDarkest:           darken($blue, 8%);
 
 // Error colors
-$red:                   #ba2b36;
-$redLight:			lighten($red, 30%);
-$redLighter:			lighten($red, 40%);
-$redLightest:			lighten($red, 50%);
+$red:                   $red;
+$redLight:		    lighten($red, 30%);
+$redLighter:		    lighten($red, 40%);
+$redLightest:		    lighten($red, 50%);
 
 $green:                 #74ae42;
 $greenLight:            lighten($green, 5%);

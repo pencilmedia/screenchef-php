@@ -29,12 +29,12 @@
 
 /* Highlight Text Color */
 ::selection {
-  background: #f96;
+  background: #f50;
   /* Safari */
   color: #fff; }
 
 ::-moz-selection {
-  background: #f96;
+  background: #f50;
   /* Firefox */
   color: #fff; }
 
@@ -57,7 +57,7 @@ a {
   text-decoration: none;
   border-bottom: 1px dashed #ddd; }
   a:hover {
-    color: #986FB1;
+    color: #94c;
     border-bottom-style: solid; }
 
 dl > dd {
@@ -80,7 +80,7 @@ dl > dd {
 .callout {
   padding: 20px 40px;
   border: 1px dashed #ddd;
-  background: #f2f2f2; }
+  background: #f0f0f0; }
   .callout > h4 {
     margin-bottom: 10px; }
   .callout .icon-award {
@@ -310,7 +310,7 @@ header {
       border-bottom: none;
       color: #595959; }
   header hgroup h2 {
-    color: #f96;
+    color: #f50;
     font-size: 135%; }
     header hgroup h2 + p {
       margin-top: 10px; }
@@ -327,7 +327,7 @@ header {
           text-transform: capitalize;
           text-shadow: 0 1px #fff; }
           header nav > ul li a.active {
-            color: #986FB1;
+            color: #94c;
             font-weight: bold; }
 
 /* BEGIN: Secondary Page Navigation */
@@ -457,7 +457,7 @@ main {
   margin: 0 5%; }
 
 a {
-  color: #432; }
+  color: #382424; }
 
 .color-palette {
   display: flex;
@@ -470,23 +470,14 @@ a {
   margin: 0 5px 5px 0;
   text-align: center; }
   .box-color.black {
-    color: #999999;
+    color: white;
     background: #000; }
-  .box-color.black-light {
-    color: #999999;
-    background: #4d4c4c; }
-  .box-color.black-lighter {
-    color: #333333;
-    background: #999999; }
-  .box-color.black-lightest {
-    color: #333333;
-    background: #e6e5e5; }
   .box-color.charcoal {
     color: white;
     background: #333; }
   .box-color.grey-lightest {
     color: #333333;
-    background: #f2f2f2; }
+    background: #f0f0f0; }
   .box-color.grey-lighter {
     color: #333333;
     background: #e6e5e5; }
@@ -510,27 +501,24 @@ a {
     background: #043F90; }
   .box-color.red {
     color: white;
-    background: #ba2b36; }
+    background: #d22; }
   .box-color.brown {
     color: white;
-    background: #432; }
+    background: #382424; }
   .box-color.yellow {
     color: white;
-    background: #EFB73E; }
-  .box-color.schoolbusYellow {
-    color: #333333;
     background: #FEC200; }
   .box-color.orange {
     color: white;
-    background: #f96; }
-  .box-color.darkOrange {
-    color: white;
-    background: #993300; }
+    background: #f50; }
   .box-color.pink {
     color: white;
-    background: #c3325f; }
+    background: #f69; }
   .box-color.purple {
     color: white;
-    background: #986FB1; }
+    background: #94c; }
+  .box-color.green {
+    color: white;
+    background: #74ae42; }
 
 /*# sourceMappingURL=global.css.map */

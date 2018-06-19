@@ -20,7 +20,7 @@ html, body {
 }
 body {
     background-color: $bodyBackground;
-    border-top: 2px solid $schoolbusYellow;
+    border-top: 2px solid $yellow;
     margin: 0;
     padding: 0;
 }
@@ -50,8 +50,8 @@ dl {
 .back_top {
    margin: 0;
    padding: $pageMargin $pageMargin $pageMargin 0;
-   border-bottom: 1px dashed $schoolbusYellow;
-   // border-top: 1px dashed $schoolbusYellow;
+   border-bottom: 1px dashed $yellow;
+   // border-top: 1px dashed $yellow;
 }
 .align-right {
    text-align: right;
@@ -68,11 +68,11 @@ dl {
        margin-bottom: $pageMargin - 10px;
    }
    .icon-award {
-      //  color: lighten($schoolbusYellow, 25%);
+      //  color: lighten($yellow, 25%);
       color: $greyLight;
    }
    .callout-awards {
-       border: 1px dashed $schoolbusYellow;
-       background: lighten($schoolbusYellow, 50%);
+       border: 1px dashed $yellow;
+       background: lighten($yellow, 50%);
    }
 }

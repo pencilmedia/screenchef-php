@@ -32,13 +32,10 @@ require('../vendor/autoload.php'); // For heroku php hosting
             </section>
             <section>
                 <h3>Color Palette</h3>
+                <h4>Dark</h4>
                 <div class="color-palette">
                     <div class="box-color black">black</div>
-                    <div class="box-color black-light">blackLight</div>
-                    <div class="box-color black-lighter">blackLighter</div>
-                    <div class="box-color black-lightest">blackLightest</div>
                     <div class="box-color charcoal">charcoal</div>
-
                     <div class="box-color grey-darkest">greyDarkest</div>
                     <div class="box-color grey-darker">greyDarker</div>
                     <div class="box-color grey-dark">greyDark</div>
@@ -46,14 +43,16 @@ require('../vendor/autoload.php'); // For heroku php hosting
                     <div class="box-color grey-light">greyLight</div>
                     <div class="box-color grey-lighter">greyLighter</div>
                     <div class="box-color grey-lightest">greyLightest</div>
-                    
+                </div>
+
+                <h4>Colors</h4>
+                <div class="color-palette">
                     <div class="box-color blue">blue</div>
                     <div class="box-color red">red</div>
-                    <div class="box-color brown">brown</div>
-                    <div class="box-color yellow">yellow</div>
-                    <div class="box-color schoolbusYellow">schoolbusYellow</div>
                     <div class="box-color orange">orange</div>
-                    <div class="box-color darkOrange">darkOrange</div>
+                    <div class="box-color yellow">yellow</div>
+                    <div class="box-color green">green</div>
+                    <div class="box-color brown">brown</div>
                     <div class="box-color pink">pink</div>
                     <div class="box-color purple">purple</div>
                 </div>

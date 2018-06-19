@@ -19,7 +19,7 @@ html,
 body {
 	@include BodyCopy;
     background-color: $bodyBackground;
-    border-top: 2px solid $schoolbusYellow;
+    border-top: 2px solid $yellow;
     margin: 0;
     padding: 0;
 }
@@ -45,23 +45,11 @@ a {
     text-align: center;
     // black
     &.black {
-        color: lighten($black, 60%);
+        color: white;
         background: $black;
     }
-    &.black-light {
-        color: lighten($black, 60%);
-        background: $blackLight;
-    }
-    &.black-lighter {
-        color: lighten($black, 20%);
-        background: $blackLighter;
-    }
-    &.black-lightest {
-        color: lighten($black, 20%);
-        background: $blackLightest;
-    }
     &.charcoal {
-        color: lighten($white, 20%);
+        color: white;
         background: $charcoal;
     }
     // grey
@@ -110,17 +98,9 @@ a {
         color: lighten($white, 20%);
         background: $yellow;
     }
-    &.schoolbusYellow {
-        color: darken($white, 80%);
-        background: $schoolbusYellow;
-    }
     &.orange {
         color: lighten($white, 20%);
         background: $orange;
-    }
-    &.darkOrange {
-        color: lighten($white, 20%);
-        background: $darkOrange;
     }
     &.pink {
         color: lighten($white, 20%);
@@ -129,5 +109,9 @@ a {
     &.purple {
         color: lighten($white, 20%);
         background: $purple;
+    }
+    &.green {
+        color: lighten($white, 20%);
+        background: $green;
     }
 }
