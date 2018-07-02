@@ -1,10 +1,15 @@
 #Screenchef-php
 This project use Grunt for dev and Heroku php for hosting.
+Based on grunt-php for local php server
 
 ## Dist Notes
 Heroku host does not need to run grunt commands. "app" root has all css, php, js files
 
-## Setup Heroku
+## Setup Downloaded Heroku Project
+set remote heroku path
+heroku git:remote -a screenchef-php
+
+## Setup New Heroku Project
 
 ### Procfile for Heroku hosting
 Include:
@@ -22,10 +27,6 @@ Run git push heroku master to create a new release using these buildpacks.
 
 ### Notes
 Deploying PHP apps on heroku: https://devcenter.heroku.com/articles/deploying-php
-
-
-# Dev Notes
-Based on grunt-php for local php server
 
 ## Install
 
