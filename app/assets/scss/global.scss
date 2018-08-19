@@ -37,12 +37,14 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-content: center;
 }
 .box-color {
     width: 125px;
     height: 50px;
     margin: 0 5px 5px 0;
     text-align: center;
+    line-height: 50px;
     // black
     &.black {
         color: white;
