@@ -1,0 +1,87 @@
+/* BEGIN: styles.scss
+// -----------------------------------------------------*/
+
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+.box-color {
+    width: 125px;
+    height: 50px;
+    margin: 0 5px 5px 0;
+    text-align: center;
+    line-height: 50px;
+    // black
+    &.black {
+        color: white;
+        background: $black;
+    }
+    &.charcoal {
+        color: white;
+        background: $charcoal;
+    }
+    // grey
+    &.grey-lightest {
+        color: darken($white, 80%);
+        background: $greyLightest;
+    }
+    &.grey-lighter {
+        color: darken($white, 80%);
+        background: $greyLighter;
+    }
+    &.grey-light {
+        color: darken($white, 80%);
+        background: $greyLight;
+    }
+    &.grey {
+        color: darken($white, 80%);
+        background: $grey;
+    }
+    &.grey-dark {
+        color: lighten($white, 20%);
+        background: $greyDark;
+    }
+    &.grey-darker {
+        color: lighten($white, 20%);
+        background: $greyDarker;
+    }
+    &.grey-darkest {
+        color: lighten($white, 20%);
+        background: $greyDarkest;
+    }
+    // colors
+    &.blue {
+        color: lighten($white, 20%);
+        background: $blue;
+    }
+    &.red {
+        color: lighten($white, 20%);
+        background: $red;
+    }
+    &.brown {
+        color: lighten($white, 20%);
+        background: $brown;
+    }
+    &.yellow {
+        color: lighten($white, 20%);
+        background: $yellow;
+    }
+    &.orange {
+        color: lighten($white, 20%);
+        background: $orange;
+    }
+    &.pink {
+        color: lighten($white, 20%);
+        background: $pink;
+    }
+    &.purple {
+        color: lighten($white, 20%);
+        background: $purple;
+    }
+    &.green {
+        color: lighten($white, 20%);
+        background: $green;
+    }
+}

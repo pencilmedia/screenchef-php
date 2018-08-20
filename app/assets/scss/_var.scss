@@ -68,10 +68,3 @@ $screen-md-min:              992px;
 
 // Large screen / wide desktop
 $screen-lg-min:              1200px;
-
-
-@mixin BodyCopy {
-	color: $copyColor;
-	font-family: $baseFontFamily;
-	font-weight: normal;
-}

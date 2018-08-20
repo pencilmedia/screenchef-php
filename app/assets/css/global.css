@@ -3,8 +3,6 @@
 // -----------------------------------------------------*/
 /* BEGIN: _var.scss
 // -----------------------------------------------------*/
-/* BEGIN: _var.scss
-// -----------------------------------------------------*/
 /* BEGIN: variables.scss - for theme.scss
 // -----------------------------------------------------*/
 /* BEGIN: Include Mixins
@@ -39,13 +37,16 @@
   /* Firefox */
   color: #fff; }
 
-/* Global ************* */
-html, body {
+html,
+body {
   height: 100%; }
 
 body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
   background-color: #f9f9f9;
-  border-top: 2px solid #FEC200;
+  border-top: 2px solid #EFB73E;
   margin: 0;
   padding: 0; }
 
@@ -58,7 +59,7 @@ a {
   text-decoration: none;
   border-bottom: 1px dashed #ddd; }
   a:hover {
-    color: #94c;
+    color: #986FB1;
     border-bottom-style: solid; }
 
 dl > dd {
@@ -71,7 +72,7 @@ dl > dd {
 .back_top {
   margin: 0;
   padding: 20px 20px 20px 0;
-  border-bottom: 1px dashed #FEC200; }
+  border-bottom: 1px dashed #EFB73E; }
 
 .align-right {
   text-align: right; }
@@ -81,14 +82,14 @@ dl > dd {
 .callout {
   padding: 20px 40px;
   border: 1px dashed #ddd;
-  background: #f0f0f0; }
+  background: #f2f2f2; }
   .callout > h4 {
     margin-bottom: 10px; }
   .callout .icon-award {
     color: #d9d9d9; }
   .callout .callout-awards {
-    border: 1px dashed #FEC200;
-    background: #fffffe; }
+    border: 1px dashed #EFB73E;
+    background: white; }
 
 /* BEGIN: animation.scss - Custom Animation
 // -----------------------------------------------------*/
@@ -334,7 +335,7 @@ h6 {
       padding-left: 0; }
   .page-content section .colonnade.cards .card {
     font-family: 'Inconsolata';
-    background: #f0f0f0;
+    background: #f2f2f2;
     border: 1px solid #fff;
     box-shadow: 0 0 15px #d9d9d9;
     color: #333;
@@ -451,10 +452,10 @@ h6 {
           text-transform: capitalize;
           text-shadow: 0 1px #fff; }
           .page-header nav > ul li a.active {
-            color: #94c;
+            color: #986FB1;
             font-weight: bold; }
           .page-header nav > ul li a:hover {
-            border-bottom-color: #94c; }
+            border-bottom-color: #986FB1; }
         .page-header nav > ul li:after {
           content: "•"; }
         .page-header nav > ul li:last-child:after {
@@ -476,8 +477,8 @@ h6 {
       display: none; }
 
 .navbar-fixed.navbar-fixed {
-  background: rgba(254, 194, 0, 0.9);
-  border-top: 2px solid #FEC200;
+  background: rgba(239, 183, 62, 0.9);
+  border-top: 2px solid #EFB73E;
   box-shadow: 0 1px 3px #807f7f;
   height: 45px;
   left: 0;
@@ -602,19 +603,8 @@ ul.tab-nav li a.active.button {
   to {
     opacity: 1; } }
 
-html,
-body {
-  color: #333;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  background-color: #f9f9f9;
-  border-top: 2px solid #FEC200;
-  margin: 0;
-  padding: 0; }
-
-a {
-  color: #382424; }
-
+/* BEGIN: styles.scss
+// -----------------------------------------------------*/
 .color-palette {
   display: flex;
   flex-wrap: wrap;
@@ -635,7 +625,7 @@ a {
     background: #333; }
   .box-color.grey-lightest {
     color: #333333;
-    background: #f0f0f0; }
+    background: #f2f2f2; }
   .box-color.grey-lighter {
     color: #333333;
     background: #e6e5e5; }
@@ -659,22 +649,22 @@ a {
     background: #043F90; }
   .box-color.red {
     color: white;
-    background: #d22; }
+    background: #ba2b36; }
   .box-color.brown {
     color: white;
-    background: #382424; }
+    background: #432; }
   .box-color.yellow {
     color: white;
-    background: #FEC200; }
+    background: #EFB73E; }
   .box-color.orange {
     color: white;
     background: #f50; }
   .box-color.pink {
     color: white;
-    background: #f69; }
+    background: #c3325f; }
   .box-color.purple {
     color: white;
-    background: #94c; }
+    background: #986FB1; }
   .box-color.green {
     color: white;
     background: #74ae42; }

@@ -1,5 +1,10 @@
 /* BEGIN: typography.scss
 // -----------------------------------------------------*/
+@mixin BodyCopy {
+	color: $copyColor;
+	font-family: $baseFontFamily;
+	font-weight: normal;
+}
 
 body {
     font-family: $baseFontFamily;
@@ -7,7 +12,6 @@ body {
     // -webkit-text-size-adjust: 200%;
     color: $charcoal;
 }
-
 
 /* HEADER TITLES
 // -----------------------------------------------------*/

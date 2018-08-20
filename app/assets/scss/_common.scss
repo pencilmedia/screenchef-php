@@ -14,16 +14,18 @@
     color: #fff;
 }
 
-/* Global ************* */
-html, body {
+html,
+body {
     height: 100%;
 }
 body {
+	@include BodyCopy;
     background-color: $bodyBackground;
     border-top: 2px solid $yellow;
     margin: 0;
     padding: 0;
 }
+
 p {
     line-height: 1.5em;
     margin: 0 0 1.25em 0;
