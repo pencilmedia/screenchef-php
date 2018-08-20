@@ -44,7 +44,7 @@
            };
            // If nav is not visible make it visible
            if (!mainNav.isVisible()) {
-                mainNav.addClass('navbar-fixed animate25s fadeInDown');
+                mainNav.addClass('navbar-fixed fadeInDown');
            };
            // Scroll behavior: toggle freeze nav
            $(window).scroll(function () {
