@@ -5,13 +5,14 @@
 // -----------------------------------------------------
 @import 'var';
 @import 'mixins';
-@import 'common';
-@import 'animation';
 @import 'typography';
 @import 'grid';
+@import 'animation';
+
+@import 'common';
 @import 'layout';
 @import 'nav';
 @import 'footer';
-@import '_tabs';
+@import 'tabs';
 
 @import '_styleguide';

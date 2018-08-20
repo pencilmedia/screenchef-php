@@ -21,128 +21,6 @@
 // -----------------------------------------------------*/
 /* COMMON REUSABLE MIXINS
 // -----------------------------------------------------*/
-/* BEGIN: common.scss
-// -----------------------------------------------------*/
-* {
-  box-sizing: border-box; }
-
-/* Highlight Text Color */
-::selection {
-  background: #f50;
-  /* Safari */
-  color: #fff; }
-
-::-moz-selection {
-  background: #f50;
-  /* Firefox */
-  color: #fff; }
-
-html,
-body {
-  height: 100%; }
-
-body {
-  color: #333;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  background-color: #f9f9f9;
-  border-top: 2px solid #EFB73E;
-  margin: 0;
-  padding: 0; }
-
-p {
-  line-height: 1.5em;
-  margin: 0 0 1.25em 0; }
-
-a {
-  color: #032e68;
-  text-decoration: none;
-  border-bottom: 1px dashed #ddd; }
-  a:hover {
-    color: #986FB1;
-    border-bottom-style: solid; }
-
-dl > dd {
-  margin-left: 0; }
-
-/* Helpers ************* */
-.pull-right {
-  float: right; }
-
-.back_top {
-  margin: 0;
-  padding: 20px 20px 20px 0;
-  border-bottom: 1px dashed #EFB73E; }
-
-.align-right {
-  text-align: right; }
-  .align-right .button {
-    margin-bottom: 0; }
-
-.callout {
-  padding: 20px 40px;
-  border: 1px dashed #ddd;
-  background: #f2f2f2; }
-  .callout > h4 {
-    margin-bottom: 10px; }
-  .callout .icon-award {
-    color: #d9d9d9; }
-  .callout .callout-awards {
-    border: 1px dashed #EFB73E;
-    background: white; }
-
-/* BEGIN: animation.scss - Custom Animation
-// -----------------------------------------------------*/
-.animate25s {
-  -webkit-animation-duration: .25s;
-  animation-duration: .25s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.animate5s {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-/* Dropdown Menu - Open */
-@-webkit-keyframes menuOpen {
-  0% {
-    opacity: 0;
-    height: 0; }
-  100% {
-    opacity: 1;
-    height: auto; } }
-
-@keyframes menuOpen {
-  0% {
-    opacity: 0;
-    height: 0; }
-  100% {
-    opacity: 1;
-    height: auto; } }
-
-.menuOpen {
-  -webkit-animation-name: menuOpen;
-  animation-name: menuOpen; }
-
-/* Dropdown Menu - Close */
-@-webkit-keyframes menuClose {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes menuClose {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-.menuClose {
-  -webkit-animation-name: menuClose;
-  animation-name: menuClose; }
-
 /* BEGIN: typography.scss
 // -----------------------------------------------------*/
 body {
@@ -265,6 +143,128 @@ h6 {
     grid-template-areas: "hg_header" "hg_navigation" "main" "ads" "hg_footer";
     grid-template-columns: 100%;
     grid-template-rows: 100px 50px 1fr 50px 30px; } }
+
+/* BEGIN: animation.scss - Custom Animation
+// -----------------------------------------------------*/
+.animate25s {
+  -webkit-animation-duration: .25s;
+  animation-duration: .25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animate5s {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/* Dropdown Menu - Open */
+@-webkit-keyframes menuOpen {
+  0% {
+    opacity: 0;
+    height: 0; }
+  100% {
+    opacity: 1;
+    height: auto; } }
+
+@keyframes menuOpen {
+  0% {
+    opacity: 0;
+    height: 0; }
+  100% {
+    opacity: 1;
+    height: auto; } }
+
+.menuOpen {
+  -webkit-animation-name: menuOpen;
+  animation-name: menuOpen; }
+
+/* Dropdown Menu - Close */
+@-webkit-keyframes menuClose {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes menuClose {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.menuClose {
+  -webkit-animation-name: menuClose;
+  animation-name: menuClose; }
+
+/* BEGIN: common.scss
+// -----------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+/* Highlight Text Color */
+::selection {
+  background: #f50;
+  /* Safari */
+  color: #fff; }
+
+::-moz-selection {
+  background: #f50;
+  /* Firefox */
+  color: #fff; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  background-color: #f9f9f9;
+  border-top: 2px solid #EFB73E;
+  margin: 0;
+  padding: 0; }
+
+p {
+  line-height: 1.5em;
+  margin: 0 0 1.25em 0; }
+
+a {
+  color: #032e68;
+  text-decoration: none;
+  border-bottom: 1px dashed #ddd; }
+  a:hover {
+    color: #986FB1;
+    border-bottom-style: solid; }
+
+dl > dd {
+  margin-left: 0; }
+
+/* Helpers ************* */
+.pull-right {
+  float: right; }
+
+.back_top {
+  margin: 0;
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px dashed #EFB73E; }
+
+.align-right {
+  text-align: right; }
+  .align-right .button {
+    margin-bottom: 0; }
+
+.callout {
+  padding: 20px 40px;
+  border: 1px dashed #ddd;
+  background: #f2f2f2; }
+  .callout > h4 {
+    margin-bottom: 10px; }
+  .callout .icon-award {
+    color: #d9d9d9; }
+  .callout .callout-awards {
+    border: 1px dashed #EFB73E;
+    background: white; }
 
 /* BEGIN: _layout.scss
 // -----------------------------------------------------*/
