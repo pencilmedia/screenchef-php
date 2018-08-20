@@ -43,7 +43,7 @@
                 );
            };
            // If nav is not visible make it visible
-           if (!$('.page-header').isVisible()) {
+           if (!mainNav.isVisible()) {
                 mainNav.addClass('navbar-fixed animate25s fadeInDown');
            };
            // Scroll behavior: toggle freeze nav
