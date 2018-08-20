@@ -13,6 +13,7 @@
   "author": "Ralph A. Garcia, screenchef.com",
   "license": "ISC",
   "dependencies": {
+    "fastclick": "^1.0.6",
     "grunt": ">=1.0.2",
     "grunt-browser-sync": "~2.2.0",
     "grunt-contrib-watch": "~1.1.0",
@@ -20,5 +21,8 @@
     "grunt-sass": "~2.1.0",
     "load-grunt-tasks": "~4.0.0"
   },
-  "repository": "git@github.com:pencilmedia/screenchef-php.git"
+  "repository": "git@github.com:pencilmedia/screenchef-php.git",
+  "devDependencies": {
+    "grunt-contrib-copy": "^1.0.0"
+  }
 }

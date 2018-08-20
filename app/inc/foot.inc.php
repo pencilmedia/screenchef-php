@@ -1,11 +1,9 @@
-<footer>
-    <ul>
-        <li>&copy; <?php echo date("Y"); ?> Ralph Adrian Garcia</li>
-    </ul>
+<footer class="page-footer">
+    <span>&copy; <?php echo date("Y"); ?> Ralph Adrian Garcia</span>
 </footer>
 
 <!-- Plugins -->
-<?php // echo '<script type="application/javascript" src="' . $ROOT . 'bower_components/fastclick/lib/fastclick.js"></script>'; ?>
+<?php echo '<script type="application/javascript" src="' . $ROOT . 'assets/js/fastclick.js"></script>'; ?>
 
 <!-- Global -->
 <?php echo '<script type="application/javascript" src="' . $ROOT . 'assets/js/global.js"></script>'; ?>

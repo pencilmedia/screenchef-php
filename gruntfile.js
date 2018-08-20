@@ -1,17 +1,18 @@
 'use strict';
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-php');
     grunt.loadNpmTasks('grunt-contrib-watch');
-	require('load-grunt-tasks')(grunt); //loads tasks above
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    require('load-grunt-tasks')(grunt); //loads tasks above
 
-	grunt.initConfig({
+    grunt.initConfig({
         watch: {
-			sass: {
-				// We watch and compile sass files as normal but don't live reload here
-				files: ['**/*.scss'],
-				tasks: ['sass']
-			},
+            sass: {
+                // We watch and compile sass files as normal but don't live reload here
+                files: ['**/*.scss'],
+                tasks: ['sass']
+            },
             php: {
                 files: ['app/**/*.php']
             },
@@ -19,23 +20,37 @@ module.exports = function(grunt) {
                 spawn: false // scss will compile after browser reload without this
             }
         },
-		sass: {
-			options: {
-				sourceMap: true
-			},
-			dist: {
-				files: {
-					'app/assets/css/global.css': 'app/assets/scss/global.scss'
-				},
-				livereload: true
-			}
-		},
+        // Copy files in node_modules into root directory
+        copy: {
+            main: {
+                files: [
+                    // makes all src relative to cwd
+                    {
+                        expand: true,
+                        cwd: 'node_modules/fastclick/lib/',
+                        src: ['**'],
+                        dest: 'app/assets/js'
+                    }
+                ],
+            },
+        },
+        sass: {
+            options: {
+                sourceMap: true
+            },
+            dist: {
+                files: {
+                    'app/assets/css/global.css': 'app/assets/scss/global.scss'
+                },
+                livereload: true
+            }
+        },
         browserSync: {
             dev: {
                 bsFiles: {
-					src: [
-						'app/**/*.html', 'app/**/*.php', 'app/**/*.scss', 'app/**/*.js', 'app/**/*.tpl' // Files you want to watch for changes
-					]
+                    src: [
+                        'app/**/*.html', 'app/**/*.php', 'app/**/*.scss', 'app/**/*.js', 'app/**/*.tpl' // Files you want to watch for changes
+                    ]
                 },
                 options: {
                     proxy: '127.0.0.1:8010', //our PHP server
@@ -53,6 +68,6 @@ module.exports = function(grunt) {
                 }
             }
         }
-	});
-    grunt.registerTask('default', ['php', 'sass', 'browserSync', 'watch']);
+    });
+    grunt.registerTask('default', ['php', 'copy', 'sass', 'browserSync', 'watch']);
 };

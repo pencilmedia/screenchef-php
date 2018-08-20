@@ -1,7 +1,6 @@
 (function() {
     function main() {
         var tabButtons = [].slice.call(document.querySelectorAll('ul.tab-nav li a.button'));
-
         tabButtons.map(function(button) {
             button.addEventListener('click', function() {
                 document.querySelector('li a.active.button').classList.remove('active');
