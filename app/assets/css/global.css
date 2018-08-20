@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* BEGIN: styles.scss
 // -----------------------------------------------------*/
 /* BEGIN: _var.scss
@@ -420,92 +421,96 @@ h6 {
 
 /* BEGIN: nav.scss
 // -----------------------------------------------------*/
-header {
+.page-header {
   display: grid;
   grid-template-columns: 1fr auto; }
-  header hgroup h1 {
+  .page-header hgroup h1 {
     margin: 24px 0 0 0; }
-    header hgroup h1 a {
+    .page-header hgroup h1 a {
       border-bottom: none;
       color: #595959; }
-  header hgroup h2 {
+  .page-header hgroup h2 {
     color: #f50;
     font-size: 135%; }
-    header hgroup h2 + p {
+    .page-header hgroup h2 + p {
       margin-top: 10px;
       margin-bottom: 8px; }
-  header nav {
+  .page-header nav {
     align-self: end;
     color: #ccc; }
-    header nav > ul {
+    .page-header nav > ul {
       list-style: none;
       margin-bottom: 0; }
-      header nav > ul li {
+      .page-header nav > ul li {
         display: inline-block;
         margin-bottom: 0; }
-        header nav > ul li a {
+        .page-header nav > ul li a {
           border-bottom: 4px solid transparent;
           display: inline-block;
           padding: 4px 16px;
           text-transform: capitalize;
           text-shadow: 0 1px #fff; }
-          header nav > ul li a.active {
+          .page-header nav > ul li a.active {
             color: #94c;
             font-weight: bold; }
-          header nav > ul li a:hover {
+          .page-header nav > ul li a:hover {
             border-bottom-color: #94c; }
+        .page-header nav > ul li:after {
+          content: "•"; }
+        .page-header nav > ul li:last-child:after {
+          content: ""; }
 
 /* BEGIN: Secondary Page Navigation */
-.freeze-nav .page-header {
-  border: 1px solid transparent; }
-  .freeze-nav .page-header hgroup {
-    -moz-transition: all 2s ease-in ease;
-    -ms-transition: all 2s ease-in ease;
-    -o-transition: all 2s ease-in ease;
-    -webkit-transition: all 2s ease-in ease;
-    transition: all 2s ease-in ease; }
-    .freeze-nav .page-header hgroup h1 {
-      font-size: 115%; }
-    .freeze-nav .page-header hgroup h2 {
-      font-size: 100%; }
-      .freeze-nav .page-header hgroup h2 + p {
-        display: none; }
-  .freeze-nav .page-header.navbar-fixed {
-    background: rgba(254, 194, 0, 0.9);
-    border-top: 2px solid #FEC200;
-    box-shadow: 0 1px 3px #807f7f;
-    height: 45px;
-    left: 0;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    -webkit-backdrop-filter: blur(5px);
-    /* backdrop-filter is not fully supported yet; so far only on safari */
-    backdrop-filter: blur(5px); }
-    .freeze-nav .page-header.navbar-fixed hgroup {
-      display: inline-block; }
-      .freeze-nav .page-header.navbar-fixed hgroup h1 {
-        color: #000;
-        display: inline-block;
-        line-height: 40px; }
-      .freeze-nav .page-header.navbar-fixed hgroup h2 {
-        display: none; }
-    .freeze-nav .page-header.navbar-fixed nav {
-      margin-right: 10px;
-      padding-top: 5px;
-      top: 0; }
-      .freeze-nav .page-header.navbar-fixed nav ul {
+.navbar-fixed hgroup {
+  -moz-transition: all 2s ease-in ease;
+  -ms-transition: all 2s ease-in ease;
+  -o-transition: all 2s ease-in ease;
+  -webkit-transition: all 2s ease-in ease;
+  transition: all 2s ease-in ease; }
+  .navbar-fixed hgroup h1 {
+    font-size: 115%;
+    margin: 0; }
+  .navbar-fixed hgroup h2 {
+    font-size: 100%; }
+    .navbar-fixed hgroup h2 + p {
+      display: none; }
+
+.navbar-fixed.navbar-fixed {
+  background: rgba(254, 194, 0, 0.9);
+  border-top: 2px solid #FEC200;
+  box-shadow: 0 1px 3px #807f7f;
+  height: 45px;
+  left: 0;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(5px);
+  /* backdrop-filter is not fully supported yet; so far only on safari */
+  backdrop-filter: blur(5px); }
+  .navbar-fixed.navbar-fixed hgroup {
+    display: inline-block; }
+    .navbar-fixed.navbar-fixed hgroup h1 {
+      color: #000;
+      display: inline-block;
+      line-height: 40px; }
+    .navbar-fixed.navbar-fixed hgroup h2 {
+      display: none; }
+  .navbar-fixed.navbar-fixed nav {
+    margin-right: 10px;
+    padding-top: 5px;
+    top: 0; }
+    .navbar-fixed.navbar-fixed nav ul {
+      margin-bottom: 0; }
+      .navbar-fixed.navbar-fixed nav ul li {
         margin-bottom: 0; }
-        .freeze-nav .page-header.navbar-fixed nav ul li {
-          margin-bottom: 0; }
-          .freeze-nav .page-header.navbar-fixed nav ul li:after {
+        .navbar-fixed.navbar-fixed nav ul li:after {
+          color: #000; }
+        .navbar-fixed.navbar-fixed nav ul li a {
+          text-shadow: none; }
+          .navbar-fixed.navbar-fixed nav ul li a:not(.active) {
             color: #000; }
-          .freeze-nav .page-header.navbar-fixed nav ul li a {
-            text-shadow: none; }
-            .freeze-nav .page-header.navbar-fixed nav ul li a:not(.active) {
-              color: #000; }
 
 .subnav strong {
   margin-left: 10px;

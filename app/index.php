@@ -16,7 +16,7 @@ require('../vendor/autoload.php'); // For heroku php hosting
 <title><?php echo hmpgTitle ?></title>
 <?php include("inc/head.inc.php"); ?>
 </head>
-<body class="hmpg">
+<body class="secondary">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->

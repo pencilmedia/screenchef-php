@@ -1,7 +1,7 @@
 /* BEGIN: nav.scss
 // -----------------------------------------------------*/
 
-header {
+.page-header {
     display: grid;
     grid-template-columns: 1fr auto;
     hgroup {
@@ -44,67 +44,74 @@ header {
                         border-bottom-color: $purple;
                     }
                 }
+                &:after {
+                    content: "•";
+                }
+                &:last-child {
+                    &:after {
+                        content: "";
+                    }
+                }
             }
         }
     }
 }
 
 /* BEGIN: Secondary Page Navigation */
-.freeze-nav {
-    .page-header {
-        border:1px solid transparent;
-        hgroup {
-            @include transition(all 2.0s ease-in);
-            h1 {
-                font-size: 115%;
-            }
-            h2 {
-                font-size: 100%;
-                + p {
-                    display: none;
-                }
+
+.navbar-fixed {
+    hgroup {
+        @include transition(all 2.0s ease-in);
+        h1 {
+            font-size: 115%;
+            margin: 0;
+        }
+        h2 {
+            font-size: 100%;
+            + p {
+                display: none;
             }
         }
-        &.navbar-fixed {
-            background: rgba($yellow, 0.9);
-            border-top: 2px solid $yellow;
-            box-shadow: 0 1px 3px $greyDarker;
-            height: 45px;
-            left: 0;
-            padding: 0 $pageMargin;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 9999;
-            -webkit-backdrop-filter: blur(5px); /* backdrop-filter is not fully supported yet; so far only on safari */
-            backdrop-filter: blur(5px);
-            hgroup {
+    }
+    &.navbar-fixed {
+        background: rgba($yellow, 0.9);
+        border-top: 2px solid $yellow;
+        box-shadow: 0 1px 3px $greyDarker;
+        height: 45px;
+        left: 0;
+        padding: 0 $pageMargin;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        -webkit-backdrop-filter: blur(5px); /* backdrop-filter is not fully supported yet; so far only on safari */
+        backdrop-filter: blur(5px);
+        hgroup {
+            display: inline-block;
+            h1 {
+                color: $black;
                 display: inline-block;
-                h1 {
-                    color: $black;
-                    display: inline-block;
-                    line-height: 40px;
-                }
-                h2 {
-                    display: none;
-                }
+                line-height: 40px;
             }
-            nav {
-                margin-right: 10px;
-                padding-top: 5px;
-                top: 0;
-                ul {
+            h2 {
+                display: none;
+            }
+        }
+        nav {
+            margin-right: 10px;
+            padding-top: 5px;
+            top: 0;
+            ul {
+                margin-bottom: 0;
+                li {
                     margin-bottom: 0;
-                    li {
-                        margin-bottom: 0;
-                        &:after {
+                    &:after {
+                        color: $black;
+                    }
+                    a {
+                        text-shadow: none;
+                        &:not(.active) {
                             color: $black;
-                        }
-                        a {
-                            text-shadow: none;
-                            &:not(.active) {
-                                color: $black;
-                            }
                         }
                     }
                 }
